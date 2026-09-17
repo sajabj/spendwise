@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
-  User,
   Mail,
   Calendar,
   Save,
   ShieldCheck,
   AlertTriangle,
-  Lock,
   Trash2
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -434,7 +432,7 @@ export const Profile = () => {
               {deleteError && <p className="form-error">{deleteError}</p>}
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.75rem', marginTop: '0.5rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.75rem', marginTop: '0.5rem', flexWrap: 'wrap' }}>
               <Button
                 variant="secondary"
                 onClick={() => setDeleteModalOpen(false)}

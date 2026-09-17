@@ -23,24 +23,8 @@ export const SearchFilter = ({
     sortBy !== 'date_desc';
 
   return (
-    <div
-      className="card"
-      style={{
-        padding: '1.25rem',
-        marginBottom: '1.5rem',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '1rem'
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          alignItems: 'center',
-          gap: '0.85rem'
-        }}
-      >
+    <div className="card filter-card">
+      <div className="filter-controls">
         {/* Search by name */}
         <div className="search-input-wrapper">
           <Search size={18} className="search-icon" />
@@ -54,7 +38,7 @@ export const SearchFilter = ({
         </div>
 
         {/* Filter by Category */}
-        <div style={{ minWidth: 160 }}>
+        <div className="filter-item">
           <select
             className="form-select"
             value={categoryFilter}
@@ -71,7 +55,7 @@ export const SearchFilter = ({
         </div>
 
         {/* Filter by Date */}
-        <div style={{ minWidth: 160 }}>
+        <div className="filter-item">
           <input
             type="date"
             className="form-input"
@@ -83,7 +67,7 @@ export const SearchFilter = ({
         </div>
 
         {/* Sort Controls */}
-        <div style={{ minWidth: 190 }}>
+        <div className="filter-item filter-item-sort">
           <select
             className="form-select"
             value={sortBy}
@@ -104,6 +88,7 @@ export const SearchFilter = ({
             size="sm"
             icon={RotateCcw}
             onClick={onClearFilters}
+            className="filter-reset-btn"
             title={t('expensesPage.resetFilters')}
           >
             {t('expensesPage.resetFilters')}

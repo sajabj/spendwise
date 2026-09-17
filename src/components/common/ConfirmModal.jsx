@@ -38,7 +38,7 @@ export const ConfirmModal = ({
           </div>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.75rem', marginTop: '0.5rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.75rem', marginTop: '0.5rem', flexWrap: 'wrap' }}>
           <Button variant="secondary" onClick={onClose} disabled={loading}>
             {cancelText}
           </Button>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Mail, Lock, User, Wallet, Sparkles } from 'lucide-react';
+import { Wallet, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { Button } from '../components/common/Button';
@@ -88,9 +88,9 @@ export const Register = () => {
   };
 
   return (
-    <div className="auth-page" style={{ position: 'relative' }}>
-      {/* Top language toggle switch */}
-      <div style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', zIndex: 10 }}>
+    <div className="auth-page">
+      {/* Top language toggle bar */}
+      <div className="auth-topbar">
         <LanguageSwitcher />
       </div>
 

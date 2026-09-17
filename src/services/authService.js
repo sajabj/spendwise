@@ -1,6 +1,7 @@
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  sendPasswordResetEmail,
   signOut,
   updateProfile,
   updateEmail,
@@ -107,6 +108,19 @@ export const loginDemoUser = () => {
   }
   localStorage.setItem(DEMO_USER_STORAGE_KEY, JSON.stringify(DEFAULT_DEMO_USER));
   return DEFAULT_DEMO_USER;
+};
+
+/**
+ * Send password reset email via Firebase Auth.
+ */
+export const resetPassword = async (email) => {
+  if (isFirebaseConfigured && auth) {
+    await sendPasswordResetEmail(auth, email);
+    return true;
+  }
+
+  // Demo fallback simulation
+  return true;
 };
 
 /**

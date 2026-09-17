@@ -46,22 +46,11 @@ export const Navbar = ({ onOpenSidebar, onOpenAddExpense }) => {
 
         {!isFirebaseConfigured && (
           <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.4rem',
-              backgroundColor: 'rgba(245, 158, 11, 0.12)',
-              border: '1px solid rgba(245, 158, 11, 0.3)',
-              color: '#fbbf24',
-              padding: '0.3rem 0.75rem',
-              borderRadius: 'var(--radius-full)',
-              fontSize: '0.75rem',
-              fontWeight: 600
-            }}
+            className="navbar-demo-badge"
             title={t('demoModeTooltip')}
           >
             <ShieldAlert size={14} />
-            <span>{t('demoModeBadge')}</span>
+            <span className="demo-badge-text">{t('demoModeBadge')}</span>
           </div>
         )}
       </div>

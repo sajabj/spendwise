@@ -6,7 +6,7 @@ import { Loading } from '../components/common/Loading';
 
 export const Analytics = () => {
   const { expenses, stats, categoryData, monthlyData, loading } = useExpenses();
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
 
   if (loading && expenses.length === 0) {
     return <Loading message={t('common.loading')} />;

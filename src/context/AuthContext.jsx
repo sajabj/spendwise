@@ -9,7 +9,8 @@ import {
   getUserProfile,
   updateUserProfile,
   changeUserEmail,
-  deleteUserAccount
+  deleteUserAccount,
+  resetPassword as resetPasswordService
 } from '../services/authService';
 
 const AuthContext = createContext(null);
@@ -146,6 +147,10 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const resetPassword = async (email) => {
+    return await resetPasswordService(email);
+  };
+
   const value = {
     currentUser,
     userProfile,
@@ -157,7 +162,8 @@ export const AuthProvider = ({ children }) => {
     logout,
     updateProfileName,
     changeEmail,
-    deleteAccount
+    deleteAccount,
+    resetPassword
   };
 
 

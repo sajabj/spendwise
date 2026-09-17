@@ -208,6 +208,14 @@ export const translations = {
       haveAccountPrompt: 'Already have an account?',
       signInLink: 'Sign in',
       createAccountLink: 'Create an account',
+      forgotPasswordLink: 'Forgot Password?',
+      forgotPasswordTitle: 'Reset your password',
+      forgotPasswordSubtitle: 'Enter your registered email address to receive a password reset link.',
+      sendResetLinkBtn: 'Send Reset Link',
+      backToLogin: 'Back to Sign In',
+      resetEmailSent: 'Password reset link sent! Check your inbox (and spam folder).',
+      resetEmailSentDesc: 'We have sent password reset instructions to {email}.',
+      resetDemoNotice: 'In demo mode: Password reset email simulation successful.',
       errors: {
         fullNameRequired: 'Full name is required.',
         fullNameShort: 'Full name must be at least 2 characters.',
@@ -219,7 +227,9 @@ export const translations = {
         passwordsMismatch: 'Passwords do not match.',
         invalidCredential: 'Invalid email or password. Please try again.',
         emailInUse: 'An account already exists with this email address.',
-        weakPassword: 'The password provided is too weak. Must be at least 6 characters.'
+        weakPassword: 'The password provided is too weak. Must be at least 6 characters.',
+        userNotFound: 'No user account found with this email address.',
+        resetFailed: 'Failed to send password reset email. Please try again.'
       }
     },
 
@@ -443,6 +453,14 @@ export const translations = {
       haveAccountPrompt: 'هل لديك حساب بالفعل؟',
       signInLink: 'تسجيل الدخول',
       createAccountLink: 'إنشاء حساب جديد',
+      forgotPasswordLink: 'نسيت كلمة المرور؟',
+      forgotPasswordTitle: 'إعادة تعيين كلمة المرور',
+      forgotPasswordSubtitle: 'أدخل بريدك الإلكتروني المسجل وسنرسل لك رابط إعادة تعيين كلمة المرور.',
+      sendResetLinkBtn: 'إرسال رابط إعادة التعيين',
+      backToLogin: 'العودة لتسجيل الدخول',
+      resetEmailSent: 'تم إرسال رابط إعادة التعيين! تحقق من بريدك الإلكتروني.',
+      resetEmailSentDesc: 'أرسلنا تعليمات استعادة كلمة المرور إلى {email}.',
+      resetDemoNotice: 'الوضع التجريبي: تمت محاكاة إرسال رابط إعادة تعيين كلمة المرور بنجاح.',
       errors: {
         fullNameRequired: 'الاسم الكامل مطلوب.',
         fullNameShort: 'يجب أن يتكون الاسم من حرفين على الأقل.',
@@ -454,7 +472,9 @@ export const translations = {
         passwordsMismatch: 'كلمتا المرور غير متطابقتين.',
         invalidCredential: 'البريد الإلكتروني أو كلمة المرور غير صحيحة.',
         emailInUse: 'يوجد حساب مسجل بهذا البريد الإلكتروني بالفعل.',
-        weakPassword: 'كلمة المرور ضعيفة جدًا، يجب أن تكون 6 أحرف على الأقل.'
+        weakPassword: 'كلمة المرور ضعيفة جدًا، يجب أن تكون 6 أحرف على الأقل.',
+        userNotFound: 'لا يوجد حساب مسجل بهذا البريد الإلكتروني.',
+        resetFailed: 'تعذر إرسال بريد إعادة تعيين كلمة المرور. يرجى المحاولة مرة أخرى.'
       }
     },
 

@@ -108,7 +108,7 @@ export const ExpenseForm = ({
       </div>
 
       {/* Amount & Date in 2-column layout */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+      <div className="form-grid-2">
         <div className="form-group">
           <label className="form-label" htmlFor="expense-amount">
             {t('expenseForm.amountLabel')} *
@@ -188,7 +188,8 @@ export const ExpenseForm = ({
           display: 'flex',
           justifyContent: 'flex-end',
           gap: '0.75rem',
-          marginTop: '1.5rem'
+          marginTop: '1.5rem',
+          flexWrap: 'wrap'
         }}
       >
         {onCancel && (
