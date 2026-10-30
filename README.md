@@ -225,8 +225,8 @@ VITE_FIREBASE_APP_ID=your_app_id
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/expense-tracker.git
-cd expense-tracker
+git clone https://github.com/sajabj/spendwise.git
+cd spendwise
 ```
 
 ### Install Dependencies
